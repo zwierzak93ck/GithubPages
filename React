@@ -1,0 +1,18 @@
+in package.json:
+{
+  "homepage": "<<gitHubPagesAddress>",
+  …
+}
+
+npm install --save gh-pages
+
+in package.json:
+{
+  "scripts": {
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build",
+      …
+  }
+}
+
+npm run deploy
